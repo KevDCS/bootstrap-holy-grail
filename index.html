@@ -10,18 +10,203 @@
 		<title>Bootstrap Holy Grail</title>
 	</head>
 	<body>
-		<div class="container vh-100 text-center border border-secondary">
-      <div class="row h-25">
-        <div class="col d-flex justify-content-center align-items-center border fs-1 bg-primary">HEADER</div>
+		<div class="container text-center border border-secondary">
+			<!-- HEADER AND NAVBAR -->
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center border bg-primary">
+					<nav class="navbar justify-content-space-between navbar-expand-lg navbar-light bg-light">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">Home</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#">Page 1</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#">Page 2</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#">Page 3</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Link</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Dropdown
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><hr class="dropdown-divider"></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+									</li>
+								</ul>
+								<form class="d-flex">
+									<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+									<button class="btn btn-outline-success" type="submit">Search</button>
+								</form>
+							</div>
+						</div>
+					</nav>
+				</div>
 			</div>
-      <div class="row h-50">
-        <div class="col-3 border border-2 d-flex justify-content-center align-items-center fs-2 bg-success">SIDEBAR 1</div>
-        <div class="col-6 border border-2 d-flex justify-content-center align-items-center fs-1 bg-warning">ARTICLE</div>
-        <div class="col-3 border border-2 d-flex justify-content-center align-items-center fs-2 bg-danger">SIDEBAR 2</div>
+
+
+
+
+			<!-- LEFT SIDEBAR -->
+      <div class="row">
+        <div class="col-3 border border-2 d-flex justify-content-center align-items-center bg-success">
+					<div class="accordion accordion-flush" id="accordionFlushExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingOne">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+									Accordion Item #1
+								</button>
+							</h2>
+							<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+									Accordion Item #2
+								</button>
+							</h2>
+							<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+									Accordion Item #3
+								</button>
+							</h2>
+							<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- MAIN SECTION -->
+
+				<!-- ELEMENTOS TOGGLE -->
+        <div class="col-6 border border-2 d-flex justify-content-center flex-column align-items-center bg-warning">
+					<p>
+						<a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+						<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+						<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+					</p>
+					<div class="row">
+						<div class="col">
+							<div class="collapse multi-collapse" id="multiCollapseExample1">
+								<div class="card card-body">
+									Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="collapse multi-collapse" id="multiCollapseExample2">
+								<div class="card card-body">
+									Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- CARRUSEL DE IMÁGENES -->
+					<div id="carouselExampleControls" class="carousel slide w-full" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./images/adrien-olichon-RCAhiGJsUUE-unsplash.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="./images/declan-sun-FFsaXrYJMeY-unsplash.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="./images/pawel-czerwinski-dgJT71cXlC4-unsplash.jpg" class="d-block w-100" alt="...">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+
+
+				<!-- LEFT SIDEBAR -->
+        <div class="col-3 border border-2 d-flex flex-column justify-content-center align-items-center bg-danger">
+					<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+						<div class="card-header">Header</div>
+						<div class="card-body">
+							<h5 class="card-title">Primary card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+					<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+						<div class="card-header">Header</div>
+						<div class="card-body">
+							<h5 class="card-title">Secondary card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+					<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+						<div class="card-header">Header</div>
+						<div class="card-body">
+							<h5 class="card-title">Success card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+					<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+						<div class="card-header">Header</div>
+						<div class="card-body">
+							<h5 class="card-title">Danger card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+					</div>
+				</div>
       </div>
-      <div class="row h-25">
-				<div class="col border d-flex justify-content-center align-items-center fs-1 bg-primary">FOOTER</div>
+
+			<!-- FOOTER -->
+      <div class="row justify-content-between flex-nowrap">
+				<div class="col-2 border d-flex align-items-center">
+					<ul class="list-group">
+						<li class="list-group-item">An item</li>
+						<li class="list-group-item">A second item</li>
+						<li class="list-group-item">A third item</li>
+						<li class="list-group-item">A fourth item</li>
+						<li class="list-group-item">And a fifth one</li>
+					</ul>
+				</div>
+				<nav class="col-3 navbar navbar-light bg-light">
+					<div class="container-fluid">
+						<form class="d-flex">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					</div>
+				</nav>
 			</div>
+
+
+
 		</div>
 
 		<!-- Script para Bootstrap -->
